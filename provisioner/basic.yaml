@@ -1,0 +1,38 @@
+apiVersion: karpenter.sh/v1alpha5
+kind: Provisioner
+metadata:
+  name: default
+spec:
+  providerRef:
+    name: default
+  ttlSecondsAfterEmpty: 5
+  labels:
+    type: karpenter
+  requirements:
+    - key: "karpenter.k8s.aws/instance-category"
+      operator: In
+      values: ["c", "m"]
+    - key: "kubernetes.io/arch"
+      operator: In
+      values: ["amd64"]
+    - key: "karpenter.k8s.aws/instance-cpu"
+      operator: In
+      values: ["2", "4"]   
+    - key: "karpenter.sh/capacity-type" # If not included, the webhook for the AWS cloud provider will default to on-demand
+      operator: In
+      values: ["on-demand"]
+  limits:
+    resources:
+      cpu: 1000
+      memory: 1000Gi
+    
+---
+apiVersion: karpenter.k8s.aws/v1alpha1
+kind: AWSNodeTemplate
+metadata:
+  name: default
+spec:
+  subnetSelector:
+    karpenter.sh/discovery: "${CLUSTER_NAME}" # replace with your cluster name
+  securityGroupSelector:
+    karpenter.sh/discovery: "${CLUSTER_NAME}" # replace with your cluster name
