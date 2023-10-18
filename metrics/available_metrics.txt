@@ -1,0 +1,394 @@
+Connecting to karpenter.karpenter.svc.cluster.local:8000 (10.100.120.168:8000)
+writing to stdout
+# HELP certwatcher_read_certificate_errors_total Total number of certificate read errors
+# TYPE certwatcher_read_certificate_errors_total counter
+certwatcher_read_certificate_errors_total 0
+# HELP certwatcher_read_certificate_total Total number of certificate reads
+# TYPE certwatcher_read_certificate_total counter
+certwatcher_read_certificate_total 0
+# HELP controller_runtime_active_workers Number of currently used workers per controller
+# TYPE controller_runtime_active_workers gauge
+controller_runtime_active_workers{controller="deprovisioning"} 0
+controller_runtime_active_workers{controller="interruption"} 0
+controller_runtime_active_workers{controller="machine.garbagecollection"} 0
+controller_runtime_active_workers{controller="machine.link"} 0
+controller_runtime_active_workers{controller="metric_scraper"} 0
+controller_runtime_active_workers{controller="pricing"} 0
+controller_runtime_active_workers{controller="provisioner"} 0
+# HELP controller_runtime_max_concurrent_reconciles Maximum number of concurrent reconciles per controller
+# TYPE controller_runtime_max_concurrent_reconciles gauge
+controller_runtime_max_concurrent_reconciles{controller="deprovisioning"} 1
+controller_runtime_max_concurrent_reconciles{controller="interruption"} 1
+controller_runtime_max_concurrent_reconciles{controller="machine.garbagecollection"} 1
+controller_runtime_max_concurrent_reconciles{controller="machine.link"} 1
+controller_runtime_max_concurrent_reconciles{controller="metric_scraper"} 1
+controller_runtime_max_concurrent_reconciles{controller="pricing"} 1
+controller_runtime_max_concurrent_reconciles{controller="provisioner"} 1
+# HELP controller_runtime_reconcile_errors_total Total number of reconciliation errors per controller
+# TYPE controller_runtime_reconcile_errors_total counter
+controller_runtime_reconcile_errors_total{controller="deprovisioning"} 0
+controller_runtime_reconcile_errors_total{controller="interruption"} 0
+controller_runtime_reconcile_errors_total{controller="machine.garbagecollection"} 0
+controller_runtime_reconcile_errors_total{controller="machine.link"} 0
+controller_runtime_reconcile_errors_total{controller="metric_scraper"} 0
+controller_runtime_reconcile_errors_total{controller="pricing"} 0
+controller_runtime_reconcile_errors_total{controller="provisioner"} 0
+# HELP controller_runtime_reconcile_total Total number of reconciliations per controller
+# TYPE controller_runtime_reconcile_total counter
+controller_runtime_reconcile_total{controller="deprovisioning",result="error"} 0
+controller_runtime_reconcile_total{controller="deprovisioning",result="requeue"} 0
+controller_runtime_reconcile_total{controller="deprovisioning",result="requeue_after"} 0
+controller_runtime_reconcile_total{controller="deprovisioning",result="success"} 0
+controller_runtime_reconcile_total{controller="interruption",result="error"} 0
+controller_runtime_reconcile_total{controller="interruption",result="requeue"} 0
+controller_runtime_reconcile_total{controller="interruption",result="requeue_after"} 0
+controller_runtime_reconcile_total{controller="interruption",result="success"} 0
+controller_runtime_reconcile_total{controller="machine.garbagecollection",result="error"} 0
+controller_runtime_reconcile_total{controller="machine.garbagecollection",result="requeue"} 0
+controller_runtime_reconcile_total{controller="machine.garbagecollection",result="requeue_after"} 0
+controller_runtime_reconcile_total{controller="machine.garbagecollection",result="success"} 0
+controller_runtime_reconcile_total{controller="machine.link",result="error"} 0
+controller_runtime_reconcile_total{controller="machine.link",result="requeue"} 0
+controller_runtime_reconcile_total{controller="machine.link",result="requeue_after"} 0
+controller_runtime_reconcile_total{controller="machine.link",result="success"} 0
+controller_runtime_reconcile_total{controller="metric_scraper",result="error"} 0
+controller_runtime_reconcile_total{controller="metric_scraper",result="requeue"} 0
+controller_runtime_reconcile_total{controller="metric_scraper",result="requeue_after"} 0
+controller_runtime_reconcile_total{controller="metric_scraper",result="success"} 0
+controller_runtime_reconcile_total{controller="pricing",result="error"} 0
+controller_runtime_reconcile_total{controller="pricing",result="requeue"} 0
+controller_runtime_reconcile_total{controller="pricing",result="requeue_after"} 0
+controller_runtime_reconcile_total{controller="pricing",result="success"} 0
+controller_runtime_reconcile_total{controller="provisioner",result="error"} 0
+controller_runtime_reconcile_total{controller="provisioner",result="requeue"} 0
+controller_runtime_reconcile_total{controller="provisioner",result="requeue_after"} 0
+controller_runtime_reconcile_total{controller="provisioner",result="success"} 0
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 4.1794e-05
+go_gc_duration_seconds{quantile="0.25"} 5.3757e-05
+go_gc_duration_seconds{quantile="0.5"} 5.9646e-05
+go_gc_duration_seconds{quantile="0.75"} 6.4822e-05
+go_gc_duration_seconds{quantile="1"} 9.1994e-05
+go_gc_duration_seconds_sum 0.190058597
+go_gc_duration_seconds_count 3380
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 216
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.21.0"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 1.2795552e+07
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 3.2014022032e+10
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 2.013044e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 5.41619463e+08
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 5.385136e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 1.2795552e+07
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 2.7500544e+07
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 1.7260544e+07
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 88078
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 2.1307392e+07
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 4.4761088e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.6975701399400494e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 5.41707541e+08
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 1200
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 15600
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 287280
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 798504
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 2.1035376e+07
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 738764
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 1.376256e+06
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 1.376256e+06
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 5.5088392e+07
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 7
+# HELP karpenter_deprovisioning_replacement_machine_initialized_seconds Amount of time required for a replacement machine to become initialized.
+# TYPE karpenter_deprovisioning_replacement_machine_initialized_seconds histogram
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.005"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.01"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.025"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.05"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.1"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.15"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.2"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.25"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.3"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.35"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.4"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.45"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.5"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.6"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.7"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.8"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="0.9"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="1"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="1.25"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="1.5"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="1.75"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="2"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="2.5"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="3"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="3.5"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="4"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="4.5"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="5"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="6"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="7"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="8"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="9"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="10"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="15"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="20"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="25"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="30"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="40"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="50"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="60"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="120"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="150"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="300"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="450"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="600"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_bucket{le="+Inf"} 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_sum 0
+karpenter_deprovisioning_replacement_machine_initialized_seconds_count 0
+# HELP karpenter_interruption_deleted_messages Count of messages deleted from the SQS queue.
+# TYPE karpenter_interruption_deleted_messages counter
+karpenter_interruption_deleted_messages 0
+# HELP karpenter_interruption_message_latency_time_seconds Length of time between message creation in queue and an action taken on the message by the controller.
+# TYPE karpenter_interruption_message_latency_time_seconds histogram
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.005"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.01"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.025"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.05"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.1"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.15"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.2"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.25"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.3"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.35"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.4"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.45"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.5"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.6"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.7"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.8"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="0.9"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="1"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="1.25"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="1.5"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="1.75"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="2"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="2.5"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="3"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="3.5"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="4"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="4.5"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="5"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="6"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="7"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="8"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="9"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="10"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="15"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="20"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="25"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="30"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="40"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="50"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="60"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="120"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="150"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="300"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="450"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="600"} 0
+karpenter_interruption_message_latency_time_seconds_bucket{le="+Inf"} 0
+karpenter_interruption_message_latency_time_seconds_sum 0
+karpenter_interruption_message_latency_time_seconds_count 0
+# HELP karpenter_nodes_leases_deleted Number of deleted leaked leases.
+# TYPE karpenter_nodes_leases_deleted counter
+karpenter_nodes_leases_deleted 0
+# HELP karpenter_pods_startup_time_seconds The time from pod creation until the pod is running.
+# TYPE karpenter_pods_startup_time_seconds summary
+karpenter_pods_startup_time_seconds{quantile="0"} NaN
+karpenter_pods_startup_time_seconds{quantile="0.5"} NaN
+karpenter_pods_startup_time_seconds{quantile="0.9"} NaN
+karpenter_pods_startup_time_seconds{quantile="0.99"} NaN
+karpenter_pods_startup_time_seconds{quantile="1"} NaN
+karpenter_pods_startup_time_seconds_sum 0
+karpenter_pods_startup_time_seconds_count 0
+# HELP karpenter_provisioner_scheduling_duration_seconds Duration of scheduling process in seconds.
+# TYPE karpenter_provisioner_scheduling_duration_seconds histogram
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.005"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.01"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.025"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.05"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.1"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.15"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.2"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.25"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.3"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.35"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.4"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.45"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.5"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.6"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.7"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.8"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="0.9"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="1"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="1.25"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="1.5"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="1.75"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="2"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="2.5"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="3"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="3.5"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="4"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="4.5"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="5"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="6"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="7"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="8"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="9"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="10"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="15"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="20"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="25"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="30"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="40"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="50"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="60"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="120"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="150"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="300"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="450"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="600"} 0
+karpenter_provisioner_scheduling_duration_seconds_bucket{le="+Inf"} 0
+karpenter_provisioner_scheduling_duration_seconds_sum 0
+karpenter_provisioner_scheduling_duration_seconds_count 0
+# HELP karpenter_provisioner_scheduling_simulation_duration_seconds Duration of scheduling simulations used for deprovisioning and provisioning in seconds.
+# TYPE karpenter_provisioner_scheduling_simulation_duration_seconds histogram
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.005"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.01"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.025"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.05"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.1"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.15"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.2"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.25"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.3"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.35"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.4"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.45"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.5"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.6"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.7"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.8"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="0.9"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="1"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="1.25"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="1.5"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="1.75"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="2"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="2.5"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="3"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="3.5"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="4"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="4.5"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="5"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="6"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="7"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="8"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="9"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="10"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="15"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="20"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="25"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="30"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="40"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="50"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="60"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="120"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="150"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="300"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="450"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="600"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_bucket{le="+Inf"} 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_sum 0
+karpenter_provisioner_scheduling_simulation_duration_seconds_count 0
+# HELP leader_election_master_status Gauge of if the reporting system is master of the relevant lease, 0 indicates backup, 1 indicates master. 'name' is the string used to identify the lease. Please make sure to group by name.
+# TYPE leader_election_master_status gauge
+leader_election_master_status{name="karpenter-leader-election"} 0
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 371.63
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1.048576e+06
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 15
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 7.4715136e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.6971823209e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 1.32780032e+09
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes 1.8446744073709552e+19
+-                    100% |********************************| 26811  0:00:00 ETA
+written to stdout
+pod "debug" deleted
