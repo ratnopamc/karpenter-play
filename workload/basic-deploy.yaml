@@ -22,4 +22,4 @@ spec:
               cpu: "1"
               memory: "512Mi"
       nodeSelector:
-        type: karpenter
+        team: my-team
