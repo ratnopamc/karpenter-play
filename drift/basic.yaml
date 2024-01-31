@@ -1,0 +1,43 @@
+apiVersion: karpenter.sh/v1beta1
+kind: NodePool
+metadata:
+  name: default
+spec:
+  disruption:
+    consolidateAfter: 60s
+    consolidationPolicy: WhenEmpty
+    expireAfter: Never
+  limits:
+    cpu: "1000"
+  template:
+    metadata:
+        labels:
+          team: my-team
+    spec:
+      nodeClassRef:
+        name: default
+      requirements:
+      - key: karpenter.k8s.aws/instance-category
+        operator: In
+        values: ["c", "m", "r"]
+      - key: "karpenter.k8s.aws/instance-generation"
+        operator: Gt
+        values: ["5"]
+
+---
+apiVersion: karpenter.k8s.aws/v1beta1
+kind: EC2NodeClass
+metadata:
+  name: default
+spec:
+  amiFamily: AL2
+  role: karpenterNodeRole-eksworkshop-eksctl
+  securityGroupSelectorTerms:
+  - tags:
+      alpha.eksctl.io/cluster-name: eksworkshop-eksctl
+  subnetSelectorTerms:
+  - tags:
+      alpha.eksctl.io/cluster-name: eksworkshop-eksctl
+  tags:
+    intent: apps
+    managed-by: karpenter
